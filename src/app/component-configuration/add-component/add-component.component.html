@@ -1,0 +1,57 @@
+<h1 mat-dialog-title> Component setitngs </h1>
+<div mat-dialog-content>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Componet Label" maxlength="500" value="">
+    </mat-form-field>
+<br>
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Componet Description"></textarea>
+    </mat-form-field>
+<br>
+    <mat-form-field>
+      <mat-select placeholder="Component Type">
+        <mat-option value="sss">
+          select data
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+<br>
+
+    <mat-form-field>
+      <mat-select placeholder="Data Type">
+        <mat-option value="sss">
+          select data
+        </mat-option>
+      </mat-select>
+</mat-form-field>
+<br>
+    <mat-form-field>
+      <mat-select placeholder="Maximum Score">
+        <mat-option value="sss">
+          select data
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-select placeholder="Passing Score">
+        <mat-option value="sss">
+          select data
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-select placeholder="Calculation Methord">
+        <mat-option value="sss">
+          select data
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button  (click)="openDelete()"> <i class="fa fa-times" aria-hidden="true"></i> Delete </button>
+  <button mat-raised-button color="warn" cdkFocusInitial (click)="openSave()">Save Componet</button>
+</div>

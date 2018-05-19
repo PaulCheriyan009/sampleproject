@@ -1,0 +1,23 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Sample Project</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <mat-nav-list>
+        <mat-divider></mat-divider>
+        <a mat-list-item [routerLink]="['/markenrty']" (click)="drawer.toggle()">Mark enrty</a>
+        <mat-divider></mat-divider>
+        <a mat-list-item  [routerLink]="['/rulesetup']" (click)="drawer.toggle()">Rule Seteup</a>
+        <mat-divider></mat-divider>
+        <a mat-list-item  [routerLink]="['/componentConfiguration']" (click)="drawer.toggle()">Component Configuration</a>
+        <mat-divider></mat-divider>
+      </mat-nav-list>
+  </mat-drawer>
+  <mat-toolbar color="primary" class="example-toolbar">
+      <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+      <h1 class="example-app-name"><a [routerLink]="['/']"></a> App</h1>
+    </mat-toolbar>
+  <div class="example-sidenav-content">
+      <router-outlet></router-outlet>
+  </div>
+
+</mat-drawer-container>

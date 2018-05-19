@@ -1,0 +1,15 @@
+.mat-card{
+  margin: 18px
+}
+.row {
+  margin-bottom: 1rem;
+}
+div {
+  /* display: inline;  */
+}
+.addButton{
+margin-right: 3px;
+float: rignt;
+padding: 3px;
+
+}
